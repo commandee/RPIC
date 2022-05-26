@@ -15,6 +15,9 @@
                 var audio1 =  document.getElementById('audio');
                 audio1.play();
             }
+            function mostrar() {
+            document.getElementById('mostraDados').innerHTML = document.getElementById('nomeComp').value; 
+        }
         </script>
         </head>
         <body>
@@ -60,18 +63,19 @@
   <button onclick=play()>aaaaaaaaaaaaaaaaaaaaaaaaa</button>
             <div class="footer">
                 <b>Contato</b><br>
-                <a href="mailto:cl201238@g.unicamp.br">
-                <button class="button">E-mail</button>
-                </a>
-                <a href="tel:19991608205">
-                    <button class="button">Telefone</button>
-                </a>
+                <a href="mailto:cl201238@g.unicamp.br"><button class="button">E-mail</button></a>
+                <a href="tel:19991608205"><button class="button">Telefone</button></a>
 
                 <div id="esconde">
-                <audio id="audio" controls src="https://www.youtube.com/watch?v=4F1zulNWzDM">
+                <audio id="audio" controls src="../ratinho.mp3">
                 </audio>
             </div>
         </div>
         </div>
+
+        <table id="tabelaDados">
+            <tr></tr>
+        </table>
+        <button onclick=mostrar()>Mostrar dados</button>
         </body>
         </html>
