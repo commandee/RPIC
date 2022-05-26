@@ -61,3 +61,10 @@ body {
 #imagem {
     text-align: center;
 }
+
+#boxTabela {
+   border: 25px solid black;
+    background-color: white;
+    color:  black;
+    z-index: 2; 
+}
