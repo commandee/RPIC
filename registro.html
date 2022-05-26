@@ -11,21 +11,17 @@
         <title>Site Projeto: Registro</title>
 
         <script>
-            function toca() {
-                var audio1 =  document.getElementById('audio');
-                audio1.play();
-            }
+           
 
-            function myFunction() {
-  var table = document.getElementById('tabelaDados');
-  var row = table.insertRow(0);
-  var cell1 = row.insertCell(0);
-  var cell2 = row.insertCell(1);
-  var cell3 = row.insertCell(2);
-  cell1.innerHTML = document.getElementById('nomeComp').value;
-  cell2.innerHTML = document.getElementById('nasc').value;
-  cell3.innerHTML = document.getElementById('username').value;
-
+            function addTable() {
+                var table = document.getElementById('tabelaDados');
+                var row = table.insertRow(0);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+                cell1.innerHTML = document.getElementById('nomeComp').value;
+                cell2.innerHTML = document.getElementById('nasc').value;
+                cell3.innerHTML = document.getElementById('username').value;
             }
         </script>
         </head>
@@ -38,8 +34,7 @@
             <hr>
             <div id="box1">
             <h1>Bem-vindo ao registro do RPIC!</h1>
-
-            <button onclick=toca()>Tocar musica</button>
+            
             <form>
                 <label for="nomeComp">Nome</label><br>
                 <input type="text" name="nomeComp" id="nomeComp" required><br><br>
@@ -59,48 +54,37 @@
             <input type="radio" name="remind" id="remind">
             <label for="remind">Lembrar de mim</label><br><br>
 
-            <input class="button" type="submit" id="enviar" onclick=play();myFunction()><br><br>
+            <input class="button" type="submit" id="enviar" onclick=play();addTable()><br><br>
                 
             <div id="imagem">
                 <label for="foto">Foto 3x4</label><br>
 
             <input type="file" name="foto" id="foto"><br><br>
 
-
             </div>
+
             </form>
+
+  <table id="tabelaDados" border=1>
+            <tr>
+            <th>Nome</th>
+            <th>Data Nascimento</th>
+            <th>Username</th>
+            </tr>
+            </table>
+
+    <button class="button" onclick=addTable()>Adicionar dados à tabela</button>
+
             <div class="footer">
                 <b>Contato</b><br>
                 <a href="mailto:cl201238@g.unicamp.br"><button class="button">E-mail</button></a>
                 <a href="tel:19991608205"><button class="button">Telefone</button></a>
 
-                <div id="esconde">
-                <audio id="audio" controls src="../ratinho.mp3">
-                </audio>
-            </div>
+        
+             
         </div>
     </div>
-    <div id="boxTabela">
-    <table id="tabelaDados" border=1>
-        <tr>
-            <th>Nome</th>
-            <th>Data Nascimento</th>
-            <th>Username</th>
-        </tr>
-        <tr>
-            <td>Isabela</td>
-            <td>19-04-12951</td>
-            <td>ISilver</td>
-          </tr>
-          <tr>
-            <td>Row2 cell1</td>
-            <td>Row2 cell2</td>
-          </tr>
-          <tr>
-            <td>Row3 cell1</td>
-            <td>Row3 cell2</td>
-          </tr>
-    </table>
+
     </div>
         </body>
         </html>

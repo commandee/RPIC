@@ -9,8 +9,17 @@
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
         <title>Site Projeto</title>
+
+        <script>
+
+function toca() {
+                var audio1 =  document.getElementById('audio');
+                audio1.play();
+            }
+        </script>
     </head> 
-        <body> 
+        <body onload=toca()> 
+            <audio id="audio" src="../FineRedMist.mp3" autoplay hidden="true"></audio>
              <div id="container">
               <a href="registro.html">
             <button class="button">Registre-se</button>

@@ -54,7 +54,7 @@ body {
     z-index: 2;
 }
 
-#esconde {
+#audio {
     display: none;
 }
 
@@ -67,4 +67,9 @@ body {
     background-color: white;
     color:  black;
     z-index: 2; 
+}
+
+table {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
 }
