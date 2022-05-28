@@ -16,23 +16,29 @@ function toca() {
                 var audio1 =  document.getElementById('audio');
                 audio1.play();
             }
+            function sobreClick() { 
+ 
+  window.open("about.html",'_self', 'location=no,heigth=100,width=100,scrollbars=yes,status=yes');
+}
         </script>
     </head> 
+
         <body onload=toca()> 
             <audio id="audio" src="../FineRedMist.mp3" autoplay hidden="true"></audio>
              <div id="container">
-              <a href="registro.html"><button class="button">Registre-se</button></a> &nbsp;
-           <a href="login.html"><button class="button">Login</button></a>
+              <a href="registro.html"><button class="button">Registre-se</button></a>
+              <a href="login.html"><button class="button">Login</button></a>
+              <button class="button" type="button" onclick=sobreClick()>Sobre</button></a>
+           
+            </div>
+            <div id="sobre">
+               
             </div>
             <div id="uau">
                
            <hr>
            <div id="box1">
            <h1>Bem-vindo ao RPIC!</h1>
-
-            <h1>Quem somos?</h1>
-
-            <p>O RuntimeProgramInterfaceCheck(RPIC) é um projeto feito para inspecionar o funcionamento de máquinas, desenvolvido por Wannakry, Silver, Ame e ED.</p>
 
             <h2>Qual a função?</h2>
             
