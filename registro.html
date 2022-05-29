@@ -48,7 +48,7 @@
             </a>
             </div>
             <hr>
-            <div id="box1">
+            <div class="box1">
             <h1>Bem-vindo ao registro do RPIC!</h1>
             
             <form>
@@ -70,7 +70,7 @@
             <input type="radio" name="remind" id="remind">
             <label for="remind">Lembrar de mim</label><br><br>
 
-            <input class="button" type="submit" id="enviar" onclick=play();addTable()><br><br>
+            <input class="button" type="submit" id="enviar" onclick=play();addTable();><br><br>
                 
             <div id="imagem">
                 <label for="foto">Foto 3x4</label><br>
@@ -90,8 +90,29 @@
             </tr>
             </table>
 
-    <button class="button" onclick=addTable();limpaImput();valida()>Adicionar dados à tabela</button>
+            <script>
+                       function geraId() {
+                        const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
+function generateString(length) {
+    let result = ' ';
+    const charactersLength = characters.length;
+    for ( let i = 0; i < length; i++ ) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+
+    return result;
+}
+
+
+document.getElementById('mostraId').innerHTML = "Registro efetuado com sucesso! Seu id é " + generateString(10);
+}
+            </script>
+         
+<button class="button" onclick=geraId()>Gerar ID</button>
+    <button class="button" onclick=addTable();limpaImput();valida();registroEfetuado();geraId();>Adicionar dados à tabela</button>
+   <p id="mostraId">
+            </p>
             <div class="footer">
                 <b>Contato</b><br>
                 <a href="mailto:cl201238@g.unicamp.br"><button class="button" type="button">E-mail</button></a>
