@@ -11,29 +11,29 @@
     left: 0;
 
     }
-
 .footer {
+    text-align: center;
+    color: white;
     position: fixed;
     bottom: 0;
     width: 100%;
     height: 100px;
-    color: white;
-    text-align: center;
+    justify-content: right;
+    align-items: right;
     background-color: #3823ec;
     border: 1px solid black;
-    margin-left: 25px;
+    z-index: 4;
 }
 
 #container {
-    width: 100%;
+    width: 97%;
     height: 100%;
     display: flex;
     justify-content: right;
     align-items: right;
     background-color: #3823ec;
     border: 1px solid black;
-    margin: auto;
-    margin-left: 25px;
+    margin-left: 54.5px;
 }
 
 p {
@@ -43,9 +43,12 @@ p {
 
 body {
     background-image: url(https://www.minhaconexao.com.br/blog/wp-content/uploads/2017/06/Servidor-interno-ou-hospedagem-na-nuvem-como-escolher-002.jpg);
+    width: 97%;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
     opacity: 0.9;
     background-repeat: no-repeat;
-    background-size: cover;
     z-index: 1;
 }
 
@@ -53,12 +56,8 @@ body {
     border: 25px solid black;
     background-color: rgba(56, 35, 236,0.8);
     color: white;
-    margin-left: 25px;
+    margin-left: 54.5px;
     z-index: 2;
-}
-
-#audio {
-    display: none;
 }
 
 #imagem {
@@ -81,36 +80,36 @@ table {
 }
 
 #container1 {
-    width: 100%;
+    width: 97%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items: right;
     background-color: #3823ec;
     border: 1px solid black;
-    margin: auto;
-    margin-left: 25px;
+    margin-left: 54.5px;
 }
 
 #sobre {
-    width: 100%;
+    width: 97%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #3823ec;
     margin: auto;
-    margin-left: 25px;
+    margin-left: 45px;
 }
 
 .vl {
-    border: 6px solid rgb(255, 0, 0);
+    border: 3px solid rgb(73, 70, 70);
     height: 100%;
     position: absolute;
-    margin-left: 25px;
     top: 0;
+    color: white;
+    z-index: 3;
   }
 
-#caixaSobre {
-    display: none;
-}
+  hr {
+    margin-left: 54.5px;
+  }
