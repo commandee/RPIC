@@ -1,75 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="icon" href="cotil.png" type="image/icon type">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon" href="cotil.png" type="image/icon type">
 
-        <title>Site Projeto</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
-        <script>
+    <title>Site Projeto</title>
 
-function toca() {
-                var audio1 =  document.getElementById('audio');
-                audio1.play();
-            }
-            function sobreClick() { 
- 
-  window.open("about.html",'_self', 'heigth=50','width=50');
-}
+</head>
 
-        </script>
-    </head> 
+<body>
+    <div id="container">
+        <a href="registro.html"><button class="button">Registre-se</button></a>
+        <a href="login.html"><button class="button">Login</button></a>
 
-        <body> 
-            <audio id="audio" src="../FineRedMist.mp3" autoplay hidden="true"></audio>
-             <div id="container">
-              <a href="registro.html"><button class="button">Registre-se</button></a>
-              <a href="login.html"><button class="button">Login</button></a>
+    </div>
 
-            </div>
+    <div class="vl">
+        <a href=#instalacao>
+            Instalação
+        </a><br>
+        <a href=#usoPessoal>
+            Instalação: Uso Pessoal
+        </a><br>
+        <a href=#usoEmpresas>
+            Instalação: Uso Empresarial
+        </a>
 
-            <div class="vl">
-            <p>Teste</p>
-            </div>
-            <div id="uau">
-           <hr>
-           <div class="box1">
-           <h1>Bem-vindo ao RPIC!</h1>
+
+    </div>
+    <div id="uau">
+        <hr>
+        <div class="box1">
+            <h1>Bem-vindo ao RPIC!</h1>
 
             <h2>Qual a função?</h2>
-            
-            <p>O RPIC é um software que executa funções embutidas do sistema operacional dos computadores para realizar a checagem pela integridade do próprio sistema operacional, seus utilitários e software.</p>
+
+            <p>O RPIC é um software que executa funções embutidas do sistema operacional dos computadores para realizar
+                a checagem pela integridade do próprio sistema operacional, seus utilitários e software.</p>
 
             <h2>A quem pode interessar?</h2>
-          
+
             <p>Este projeto pode ser de interesse de:</p>
 
-      <ol type="I">
+            <ol type="I">
                 <li>Empresas</li>
                 <li>Escritórios</li>
                 <li>Técnicos em Informática</li>
-                <li>Administradores de Sistema</li> 
+                <li>Administradores de Sistema</li>
                 <li>Usuários comuns de computador</li>
-      </ol>
-            
-    </div>
+            </ol>
+
+        </div>
         <div class="box1">
-                <h1>Sobre o RuntimeProgramInterfaceCheck</h1>
-                <p>O RuntimeProgramInterfaceCheck(RPIC) é um projeto feito para inspecionar o funcionamento de máquinas, desenvolvido por <b>Wannakry</b>, <b>Silver</b>, <b>Ame</b> e <b>ED</b>.</p>
-                <p>O projeto começou a ser desenvolvido em maio de 2022, como um <b>Trabalho de Conclusão de Curso</b></p>
-       
+            <h1>Sobre o RuntimeProgramInterfaceCheck</h1>
+            <p>O RuntimeProgramInterfaceCheck(RPIC) é um software feito para inspecionar o funcionamento de máquinas,
+                desenvolvido por <b>Davi Andrade Macedo</b>.</p>
+            <p>O projeto começou a ser desenvolvido em maio de 2022, como um <b>Trabalho de Conclusão de Curso.</b></p>
+        </div>   
+        <div id="instalacao">
+
+        <div class="box1">
+                <h1>Como o programa deve ser instalado?</h1>
+                </div>
+          
+        <div class="box1">
+            <div id="usoPessoal">
+             <h1>Uso pessoal</h1>
+                <ol type="I">
+                    <li>Abrir o site de instalação do software</li>
+                    <li>Selecionar <b>Uso próprio</b></li>
+                    <li>Efetuar o registro clicando no botão "Registre-se" ou "Login"</li>
+                    <li>Baixar o arquivo</li>
+                </ol>
             </div>
+           </div>
+
+        <div class="box1">
+            <div id="usoEmpresas">
+                <h1>Uso empresarial</h1>
+                <ol type="I">
+                    <li>Abrir o site de instalação do software em sua própria máquina</li>
+                    <li>Selecionar <b>Uso empresarial</b></li>
+                    <li>Efetuar o registro clicando no botão "Registre-se" ou "Login"</li>
+                    <li>Baixar o arquivo</li>
+                    <li>Baixar o arquivo nos outros computadores da empresa</li>
+                    <li>Informar o ID(gerado na criação de contas) no campo solicitado</li>
+                </ol>
+            </div>
+        </div>   
+          </div>
         <div class="footer">
             <p>CONTATO</p>
             <a href="mailto:cl201238@g.unicamp.br"><button class="button" type="button">E-mail</button></a>
-                <a href="tel:19991608205"><button class="button" type="button">Telefone</button></a>
+            <a href="tel:19991608205"><button class="button" type="button">Telefone</button></a>
         </div>
-        
+
     </div>
 
-        </body>
+</body>
+
 </html>

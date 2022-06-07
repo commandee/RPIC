@@ -18,15 +18,16 @@
     bottom: 0;
     width: 100%;
     height: 100px;
-    justify-content: right;
-    align-items: right;
+    justify-content: center;
+    align-items: center;
     background-color: #3823ec;
     border: 1px solid black;
     z-index: 4;
+    font-family: 'Arial', Arial, serif;
 }
 
 #container {
-    width: 97%;
+    width: 99%;
     height: 100%;
     display: flex;
     justify-content: right;
@@ -42,14 +43,13 @@ p {
 }
 
 body {
-    background-image: url(https://www.minhaconexao.com.br/blog/wp-content/uploads/2017/06/Servidor-interno-ou-hospedagem-na-nuvem-como-escolher-002.jpg);
+    background-image: url(https://conteudo.imguol.com.br/c/noticias/b1/2022/05/01/servidores-servidor-data-center-datacenter-nuvem-armazenamento-1651425786981_v2_900x506.jpg.webp);
     width: 97%;
     height: 100%;
     background-size: cover;
     background-attachment: fixed;
     opacity: 0.9;
     background-repeat: no-repeat;
-    z-index: 1;
 }
 
 .box1 { 
@@ -57,7 +57,8 @@ body {
     background-color: rgba(56, 35, 236,0.8);
     color: white;
     margin-left: 54.5px;
-    z-index: 2;
+    width: 97%;
+    z-index: 5;
 }
 
 #imagem {
@@ -68,8 +69,8 @@ body {
    border: 25px solid black;
     background-color: white;
     color:  black;
-    z-index: 2; 
-
+    z-index: 5;
+    width: 99%;
     margin-left: 25px;
 }
 
@@ -80,7 +81,7 @@ table {
 }
 
 #container1 {
-    width: 97%;
+    width: 99%;
     height: 100%;
     display: flex;
     justify-content: right;
@@ -91,7 +92,7 @@ table {
 }
 
 #sobre {
-    width: 97%;
+    width: 99%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -106,10 +107,16 @@ table {
     height: 100%;
     position: absolute;
     top: 0;
-    color: white;
-    z-index: 3;
+    color: white;        
+    background-color: rgba(190, 184, 184, 0.5);
+    z-index: 1;
   }
 
   hr {
     margin-left: 54.5px;
+    width: 99%;
+  }
+
+  a {
+      color: red;
   }
