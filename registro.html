@@ -1,130 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="icon" href="../cotil.png" type="image/icon type">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon" href="../cotil.png" type="image/icon type">
 
-        <title>Site Projeto: Registro</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
-        <script>
-           
+    <title>Site Projeto: Registro</title>
 
-            function addTable() {
-                var table = document.getElementById('tabelaDados');
-                var row = table.insertRow(1);
-                var cell1 = row.insertCell(0);
-                var cell2 = row.insertCell(1);
-                var cell3 = row.insertCell(2);
-                var cell4 = row.insertCell(3);
-                cell1.innerHTML = document.getElementById('nomeComp').value;
-                cell2.innerHTML = document.getElementById('nasc').value;
-                cell3.innerHTML = document.getElementById('username').value;
-                cell4.innerHTML = document.getElementById('senha').value;
+    <script>
+
+
+        function addTable() {
+            var table = document.getElementById('tabelaDados');
+            var row = table.insertRow(1);
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+            var cell4 = row.insertCell(3);
+            cell1.innerHTML = document.getElementById('nomeComp').value;
+            cell2.innerHTML = document.getElementById('nasc').value;
+            cell3.innerHTML = document.getElementById('username').value;
+            cell4.innerHTML = document.getElementById('senha').value;
+        }
+
+        function limpaImput() {
+            document.getElementById('nomeComp').value = null;
+            document.getElementById('nasc').value = null;
+            document.getElementById('username').value = null;
+            document.getElementById('senha').value = null;
+        }
+
+        function valida() {
+            if (document.getElementById('nomeComp').value = null) {
+                alert("O valor não pode ser vazio.");
             }
 
-            function limpaImput() {
-                document.getElementById('nomeComp').value = null;
-                document.getElementById('nasc').value = null;
-                document.getElementById('username').value = null;
-                document.getElementById('senha').value = null;
-            }
+        }
+    </script>
+</head>
 
-            function valida() {
-                if (document.getElementById('nomeComp').value = null) {
-                    alert("O valor não pode ser vazio.");
-                }
-            
-            }
-        </script>
-        </head>
-        <body>
-            <div id="container1">
-            <a href="index.html">
-                <button class="button">Home</button>
-            </a>
-            </div>
-            <hr>
-            <div class="vl">
-                <p>Teste</p>
-                </div>
-            <div class="box1">
-            <h1>Bem-vindo ao registro do RPIC!</h1>
-            
-            <form>
-                <label for="nomeComp">Nome</label><br>
-                <input type="text" name="nomeComp" id="nomeComp" required><br><br>
+<body>
+    <div id="container1">
+        <a href="index.html">
+            <button class="button">Home</button>
+        </a>
+    </div>
+    <hr>
+    <div class="box1">
+        <h1>Bem-vindo ao registro do RPIC!</h1>
 
-              
-
-                <label for="nasc">Data de nascimento</label><br>
-                <input type="date" name="nasc" id="nasc" required><br><br>
+        <form>
+            <label for="nomeComp">Nome</label><br>
+            <input type="text" name="nomeComp" id="nomeComp" required><br><br>
 
 
-                <input type="text" name="username" id="username" placeholder="Nome de usuário" required><br><br>
+
+            <label for="nasc">Data de nascimento</label><br>
+            <input type="date" name="nasc" id="nasc" required><br><br>
 
 
-                <input type="password" name="senha" id="senha" placeholder="Senha" required><br><br>
+            <input type="text" name="username" id="username" placeholder="Nome de usuário" required><br><br>
+
+
+            <input type="password" name="senha" id="senha" placeholder="Senha" required><br><br>
 
 
             <input type="radio" name="remind" id="remind">
             <label for="remind">Lembrar de mim</label><br><br>
 
             <input class="button" type="submit" id="enviar" onclick=play();addTable();><br><br>
-                
+
             <div id="imagem">
                 <label for="foto">Foto 3x4</label><br>
 
-            <input type="file" name="foto" id="foto"><br><br>
+                <input type="file" name="foto" id="foto"><br><br>
 
             </div>
 
-            </form>
+        </form>
 
-  <table id="tabelaDados" border=1>
+        <table id="tabelaDados" border=1>
             <tr>
-            <th>Nome</th>
-            <th>Data Nascimento</th>
-            <th>Username</th>
-            <th>Senha</th>
+                <th>Nome</th>
+                <th>Data Nascimento</th>
+                <th>Username</th>
+                <th>Senha</th>
             </tr>
-            </table>
+        </table>
 
-            <script>
-                       function geraId() {
-                        const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        <script>
+            function geraId() {
+                const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
-function generateString(length) {
-    let result = ' ';
-    const charactersLength = characters.length;
-    for ( let i = 0; i < length; i++ ) {
-        result += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
+                function generateString(length) {
+                    let result = ' ';
+                    const charactersLength = characters.length;
+                    for (let i = 0; i < length; i++) {
+                        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+                    }
 
-    return result;
-}
+                    return result;
+                }
 
 
-document.getElementById('mostraId').innerHTML = "Registro efetuado com sucesso! Seu id é " + generateString(10);
-}
+                document.getElementById('mostraId').innerHTML = "Registro efetuado com sucesso! Seu id é " + generateString(10);
+            }
 
-var x = new Object();
-            </script>
-         
-<button class="button" onclick=geraId()>Gerar ID</button>
-    <button class="button" onclick=addTable();limpaImput();valida();registroEfetuado();geraId();>Adicionar dados à tabela</button>
-   <p id="mostraId">
-            </p>
-            <div class="footer">
-                <p>CONTATO</p>
-                <a href="mailto:cl201238@g.unicamp.br"><button class="button" type="button">E-mail</button></a>
-                    <a href="tel:19991608205"><button class="button" type="button">Telefone</button></a>
-            </div>
+            var x = new Object();
+        </script>
+
+        <button class="button" onclick=geraId()>Gerar ID</button>
+        <button class="button" onclick=addTable();limpaImput();valida();registroEfetuado();geraId();>Adicionar dados à
+            tabela</button>
+        <p id="mostraId">
+        </p>
+        <div class="footer">
+            <p>CONTATO</p>
+            <a href="mailto:cl201238@g.unicamp.br"><button class="button" type="button">E-mail</button></a>
+            <a href="tel:19991608205"><button class="button" type="button">Telefone</button></a>
+        </div>
     </div>
 
     </div>
-        </body>
-        </html>
+</body>
+
+</html>

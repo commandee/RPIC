@@ -20,21 +20,20 @@
     height: 100px;
     justify-content: center;
     align-items: center;
-    background-color: #3823ec;
+    background-color: rgba(56, 35, 236,0.8);
     border: 1px solid black;
     z-index: 4;
     font-family: 'Arial', Arial, serif;
 }
 
 #container {
-    width: 99%;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: right;
     align-items: right;
     background-color: #3823ec;
     border: 1px solid black;
-    margin-left: 54.5px;
 }
 
 p {
@@ -56,8 +55,7 @@ body {
     border: 25px solid black;
     background-color: rgba(56, 35, 236,0.8);
     color: white;
-    margin-left: 54.5px;
-    width: 97%;
+    width: 100%;
     z-index: 5;
 }
 
@@ -70,53 +68,35 @@ body {
     background-color: white;
     color:  black;
     z-index: 5;
-    width: 99%;
-    margin-left: 25px;
+    width: 100%;
 }
 
 table {
     background-color: rgba(255, 255, 255, 0.8);
     color: rgb(0, 0, 0);
-    margin-left: 25px;
+
 }
 
 #container1 {
-    width: 99%;
-    height: 100%;
-    display: flex;
-    justify-content: right;
-    align-items: right;
-    background-color: #3823ec;
-    border: 1px solid black;
-    margin-left: 54.5px;
-}
-
-#sobre {
-    width: 99%;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #3823ec;
-    margin: auto;
-    margin-left: 45px;
+    background-color: rgba(56, 35, 236,0.8);
+    border: 1px solid black;
 }
 
-.vl {
-    border: 3px solid rgb(73, 70, 70);
-    height: 100%;
-    position: absolute;
-    top: 0;
-    color: white;        
-    background-color: rgba(190, 184, 184, 0.5);
-    z-index: 1;
-  }
-
   hr {
-    margin-left: 54.5px;
-    width: 99%;
+    width: 100%;
   }
 
   a {
       color: red;
+  }
+
+  #atalhos {
+    display: flex;
+    justify-content: right;
+    align-items: right;
   }
