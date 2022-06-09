@@ -106,3 +106,10 @@ table {
       width: 500px;
       height: 500px;
   }
+
+  #sumario {
+      font-size: 20px;
+  }
+  #aviso {
+      color: red;
+  }
