@@ -15,21 +15,29 @@
 
 <body>
     <div id="container">
-        <a href="sobre.html"><button class="button" type="button">Sobre nós</button></a>
-        <a href=#usoPessoal><button class="button" type="button">Instalação: Uso Pessoal</button></a>
-        <a href=#usoEmpresas><button class="button" type="button">Instalação: Uso Empresarial</button></a>
-        <a href=#instalacao><button class="button" type="button">Sobre a instalação</button></a>
-        <a href="registro.html"><button class="button" type="button">Registre-se</button></a>
-        <a href="login.html"><button class="button" type="button">Login</button></a>
+        <a href="sobre.html"><button class="button" type="button" accesskey="a">Sobre nós</button></a>
+        <a href=#usoPessoal><button class="button" type="button" accesskey="p">Instalação: Uso Pessoal</button></a>
+        <a href=#usoEmpresas><button class="button" type="button" accesskey="u">Instalação: Uso Empresarial</button></a>
+        <a href=#instalacao><button class="button" type="button" accesskey="s">Sobre a instalação</button></a>
+        <a href="registro.html"><button class="button" type="button" accesskey="r">Registre-se</button></a>
+        <a href="login.html"><button class="button" type="button" accesskey="l">Login</button></a>
     </div>
     <div id="uau">
         <hr>
+        <div class="box1">
+            <div id="sumario">
+                <h1>Atalhos:</h1>
+                <b>Alt + R:</b>Registro<br>
+                <b>Alt + L:</b>Login<br>
+            </div>
+        </div>
         <div class="box1">
             <h1>Bem-vindo ao RPIC!</h1>
 
             <h2>Qual a função?</h2>
 
-            <p>O <i>RPIC(RuntimeProgramInterfaceCheck)</i> é um software que executa funções embutidas do sistema operacional dos computadores
+            <p>O <i>RPIC(RuntimeProgramInterfaceCheck)</i> é um software que executa funções embutidas do sistema
+                operacional dos computadores
                 para realizar
                 a checagem pela integridade do próprio sistema operacional, seus utilitários e software.</p>
 
@@ -47,21 +55,31 @@
 
         </div>
         <div class="box1">
-            <h1>Sobre o RuntimeProgramInterfaceCheck</h1>
-            <p>O RuntimeProgramInterfaceCheck(RPIC) é um software feito para inspecionar o funcionamento de
-                máquinas,
-                desenvolvido por <b>Davi Andrade Macedo</b>.</p>
-            <p>O projeto começou a ser desenvolvido em maio de 2022, como um <b>Trabalho de Conclusão de
-                    Curso.</b></p>
-
+            <details>
+                <summary>
+                    <h1>Sobre o RuntimeProgramInterfaceCheck</h1>
+                </summary>
+                <hr>
+                <p><i>O RuntimeProgramInterfaceCheck(RPIC)</i> é um software feito para inspecionar o funcionamento de
+                    máquinas,
+                    desenvolvido por <b>Davi Andrade Macedo</b>.</p>
+                <p>O projeto começou a ser desenvolvido em maio de 2022, como um <b>Trabalho de Conclusão de
+                        Curso.</b></p>
+            </details>
         </div>
         <div id="instalacao">
             <div class="box1">
-                <h1>O RPIC e sua instalação</h1>
-                <p>O RuntimeProgramInterfaceCheck tem como função especionar o funcionamento de máquinas,
-                    seja de uso próprio ou numa empresa. Ou seja, é uma ferramenta de diagnóstico de
-                    máquinas. Ambos os modos têm um processo de instalação parecido, porém o uso é
-                    diferente.</p>
+                <details>
+                    <summary>
+                        <h1>O RPIC e sua instalação</h1>
+                    </summary>
+                    <hr>
+                    <p>O RuntimeProgramInterfaceCheck tem como função especionar o funcionamento de máquinas,
+                        seja de uso próprio ou numa empresa. Ou seja, é uma ferramenta de diagnóstico de
+                        máquinas. Ambos os modos têm um processo de instalação parecido, porém o uso é
+                        diferente.</p>
+                </details>
+                <hr>
                 <h1>Como o programa deve ser instalado?</h1>
             </div>
 
@@ -91,12 +109,13 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <p>CONTATO</p>
-            <a href="mailto:cl201238@g.unicamp.br"><button class="button" type="button">E-mail</button></a>
-            <a href="tel:19991608205"><button class="button" type="button">Telefone</button></a>
+        <div class="box1">
+            <div class="footer">
+                <p>CONTATO</p>
+                <a href="mailto:cl201238@g.unicamp.br"><button class="button" type="button">E-mail</button></a>
+                <a href="tel:19991608205"><button class="button" type="button">Telefone</button></a>
+            </div>
         </div>
-
     </div>
 
 </body>
