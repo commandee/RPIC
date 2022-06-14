@@ -58,10 +58,6 @@ body {
     z-index: 5;
 }
 
-#imagem {
-    text-align: center;
-}
-
 #boxTabela {
    border: 25px solid black;
     background-color: white;
