@@ -74,7 +74,7 @@
             <input class="button" type="submit" id="enviar" onclick=play();addTable();><br><br>
 
             <div id="imagem">
-                <label for="foto">Foto 3x4</label><br>
+                <label for="foto">Foto 3x4(Opcional)</label><br>
 
                 <input type="file" name="foto" id="foto" tabindex="6"><br><br>
 
@@ -87,6 +87,7 @@
                 <th>Nome</th>
                 <th>Data Nascimento</th>
                 <th>Username</th>
+                <th>Senha</th>
             </tr>
         </table>
 
@@ -109,10 +110,7 @@
 
         </script>
 
-        <button class="button" onclick=geraId() tabindex="7">Gerar ID</button>
-        <button class="button" onclick=addTable();limpaImput();valida();registroEfetuado();geraId();
-            tabindex="8">Adicionar dados à
-            tabela</button>
+        <button class="button" onclick=addTable();limpaImput();valida();geraId(); tabindex="8">Adicionar dados à tabela</button>
         <p id="mostraId">
         </p>
         <div class="footer">
@@ -122,7 +120,7 @@
         </div>
     </div>
 
-    </div>
+</div>
 </body>
 
 </html>
